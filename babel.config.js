@@ -1,19 +1,19 @@
 module.exports = function (api) {
-  api.cache(true);
+    api.cache(true);
 
-  const presets = [
-    ['@babel/preset-env', { 'useBuiltIns': 'usage', 'corejs': '3' }],
-    ['@babel/preset-react', { 'development': true }]
-  ];
+    const presets = [
+        ['@babel/preset-env', { 'useBuiltIns': 'usage', 'corejs': '3' }],
+        ['@babel/preset-react', { 'development': true }]
+    ];
 
-  const plugins = [
-    '@babel/plugin-proposal-class-properties',
-    '@babel/plugin-proposal-object-rest-spread',
-    '@babel/plugin-transform-modules-commonjs',
-  ];
+    const plugins = [
+        '@babel/plugin-syntax-dynamic-import',
+        '@babel/plugin-proposal-class-properties',
+        '@babel/plugin-transform-classes',
+    ];
 
-  return {
-    presets,
-    plugins
-  };
+    return {
+        presets,
+        plugins
+    };
 };
