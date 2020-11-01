@@ -8,7 +8,7 @@
     "local-build": "npm run pre-build && NODE_ENV=local webpack",
     "dev": "npm run local-build && NODE_ENV=local webpack serve",
     "pre-build": "rm -rf public/* && npm run eslint",
-    "reinstall": "rm -f package-lock.json && rm -Rf node_modules && npm install",
+    "reinstall": "rm -f package-lock.json && rm -Rf node_modules && npm i",
     "test": "jest",
     "test-coverage": "jest --coverage",
     "eslint": "eslint ./src/ --ext js --cache",
@@ -17,7 +17,12 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "prop-types": "15.7.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "5.2.1"
+  },
   "devDependencies": {
     "@babel/core": "7.12.3",
     "@babel/plugin-proposal-class-properties": "7.12.1",

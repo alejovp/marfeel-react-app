@@ -1,7 +1,9 @@
-const component = () => {
-    const element = document.createElement('div');
-    element.innerHTML = 'Hello there!!';
-    return element;
-};
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-document.body.appendChild(component());
+const rootElement = document.getElementById('root');
+ReactDOM.render(
+    <App />,
+    rootElement
+);
