@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BurgerButton /> shape will render correctly 1`] = `
+<StyledBurgerButton>
+  <StyledBurgerDiv />
+  <StyledBurgerDiv />
+  <StyledBurgerDiv />
+</StyledBurgerButton>
+`;

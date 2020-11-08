@@ -8,5 +8,8 @@ export const themeMock = {
     },
     background: {
         color: 'gray'
+    },
+    burgerButton: {
+        color: 'red'
     }
 };

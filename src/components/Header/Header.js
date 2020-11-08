@@ -1,5 +1,6 @@
 import React from 'react';
 import { Background } from '../Background';
+import { BurgerButton } from '../BurgerButton/BurgerButton';
 import { Logo } from '../Logo/Logo';
 import { StyledAppBar } from './StyledAppBar';
 import { StyledAppNav } from './StyledAppNav';
@@ -11,6 +12,7 @@ export const Header = () => (
         <Background>
             <StyledAppNav>
                 <StyledAppBar>
+                    <BurgerButton />
                     <Logo />
                 </StyledAppBar>
             </StyledAppNav>
