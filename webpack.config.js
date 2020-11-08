@@ -1,4 +1,3 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const BUILD_GLOBALS = require('./scripts/globals');
@@ -7,42 +6,51 @@ const isLocalEnv =  ENV === 'local';
 
 module.exports = {
     mode: isLocalEnv ? 'development' : 'production',
-    devtool: isLocalEnv ? 'source-map' : undefined,
+    devtool: isLocalEnv ? 'eval-source-map' : undefined,
     entry: {
         index: `${APP_DIR}/index.js`
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public'),
+        contentBase: PUBLIC_DIR,
         historyApiFallback: true,
         open: true,
         compress: true,
         port: 8081,
     },
     output: {
-        filename: '[name].bundle.js',
-        pathinfo: true,
-        sourceMapFilename: '[name].bundlejs.map',
+        filename: '[name].[contenthash].js',
+        sourceMapFilename: '[name].js.map',
         path: PUBLIC_DIR,
     },
     optimization: {
+        moduleIds: 'deterministic',
+        chunkIds: 'named',
+        runtimeChunk: 'single',
         splitChunks: {
-            chunks: 'all'
+            chunks: 'all',
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    chunks: 'all',
+                },
+            },
         }
     },
     module: {
         rules: [
             // {
-            //   test: /\.s?css$/,
-            //   use: [
-            //     'style-loader',
-            //     'css-loader',
-            //     'sass-loader'
-            //   ],
+            //     test: /\.s?css$/,
+            //     use: [
+            //         'style-loader',
+            //         'css-loader',
+            //         'sass-loader'
+            //     ],
             // },
             {
                 test: /\.jsx?$/,
-                include: [APP_DIR],
-                loader: 'babel-loader'
+                exclude: /node_modules/,
+                use: ['babel-loader']
             }
             // {
             //   test: /\.(jpg|png|gif|jpeg|woff|woff2|eot|ttf|svg)$/,
@@ -61,7 +69,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Base Project',
+            title: 'Marfeel react app',
             hash: true,
             inject: true,
             mobile: true,
