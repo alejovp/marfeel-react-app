@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> shape will render correctly 1`] = `
+<StyledHeader>
+  <Background>
+    <StyledAppNav>
+      <StyledAppBar>
+        <Logo />
+      </StyledAppBar>
+    </StyledAppNav>
+  </Background>
+</StyledHeader>
+`;
