@@ -4,9 +4,69 @@ exports[`<Header /> shape will render correctly 1`] = `
 <StyledHeader>
   <Background>
     <StyledAppNav>
-      <StyledAppBar>
-        <Logo />
-      </StyledAppBar>
+      <Background>
+        <StyledAppBar>
+          <BurgerButton />
+          <Logo />
+        </StyledAppBar>
+      </Background>
+      <SectionMenu
+        hideSectionMenu={false}
+        sections={
+          Array [
+            Object {
+              "id": "sec-1",
+              "path": "/section-1",
+              "text": "SECTION 1",
+            },
+            Object {
+              "id": "sec-2",
+              "path": "/section-2",
+              "text": "SECTION 2",
+            },
+            Object {
+              "id": "sec-3",
+              "path": "/section-3",
+              "text": "SECTION 3",
+            },
+            Object {
+              "id": "sec-4",
+              "path": "/section-4",
+              "text": "SECTION 4",
+            },
+            Object {
+              "id": "sec-5",
+              "path": "/section-5",
+              "text": "SECTION 5",
+            },
+            Object {
+              "id": "sec-6",
+              "path": "/section-6",
+              "text": "SECTION 6",
+            },
+            Object {
+              "id": "sec-7",
+              "path": "/section-7",
+              "text": "SECTION 7",
+            },
+            Object {
+              "id": "sec-8",
+              "path": "/section-8",
+              "text": "SECTION 8",
+            },
+            Object {
+              "id": "sec-9",
+              "path": "/section-9",
+              "text": "SECTION 9",
+            },
+            Object {
+              "id": "sec-10",
+              "path": "/section-10",
+              "text": "SECTION 10",
+            },
+          ]
+        }
+      />
     </StyledAppNav>
   </Background>
 </StyledHeader>

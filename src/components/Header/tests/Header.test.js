@@ -21,8 +21,8 @@ describe('<Header />', () => {
             expect(renderedComponent.find(StyledHeader)).toHaveLength(1);
         });
 
-        it('will render a Background component', () => {
-            expect(renderedComponent.find(Background)).toHaveLength(1);
+        it('will render two Background components', () => {
+            expect(renderedComponent.find(Background)).toHaveLength(2);
         });
 
         it('will render a StyledAppNav component', () => {
