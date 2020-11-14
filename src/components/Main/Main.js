@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import { AppContext } from '../../contexts/AppStore';
+import { StateContext } from '../../contexts/AppStore';
 import { StyledMain } from './StyledMain';
 
+
 export const Main = () => {
-    const { state } = useContext(AppContext);
+    const state = useContext(StateContext);
 
     return (
         <StyledMain state={state}>
