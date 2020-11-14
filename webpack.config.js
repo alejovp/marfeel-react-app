@@ -1,7 +1,9 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const BUILD_GLOBALS = require('./scripts/globals');
-const { ENV, APP_DIR, PUBLIC_DIR } = BUILD_GLOBALS;
+const APP_DIR = path.join(__dirname, 'src');
+const PUBLIC_DIR = path.join(__dirname, 'public');
+const ENV = process.env.NODE_ENV;
 const isLocalEnv =  ENV === 'local';
 
 module.exports = {
