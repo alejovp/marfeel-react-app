@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { BURGER_BUTTON_SIZE } from '../../internals/constants';
 
 export const StyledBurgerDiv = styled.div`
-    width: 28px;
+    width: ${BURGER_BUTTON_SIZE}px;
     height: 4px;
     background: ${({ theme }) => theme.burgerButton && theme.burgerButton.color || 'black'};
     border-radius: 10px;

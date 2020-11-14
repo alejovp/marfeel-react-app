@@ -4,7 +4,8 @@ export const GlobalStyles = createGlobalStyle`
     html, body {
         margin: 0;
         padding: 0;
-        font-family: ${({ theme }) => theme.tipography.fontFamily};
+        font-family: ${({ theme }) => theme.tipography && theme.tipography.fontFamily};
+        color: ${({ theme }) => theme.tipography && theme.tipography.primaryFontColor};
         font-size: 16px;
     }
     *, *::after, *::before {
@@ -13,7 +14,6 @@ export const GlobalStyles = createGlobalStyle`
     #root {
         align-items: center;
         display: flex;
-        height: 100vh;
         justify-content: center;
     }
 `;
