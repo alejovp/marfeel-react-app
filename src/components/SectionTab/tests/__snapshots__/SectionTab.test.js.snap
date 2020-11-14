@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionTab /> shape will render correctly 1`] = `
+<StyledSectionTab
+  isActive={false}
+  onClick={[Function]}
+>
+  <a>
+    SECTION 2
+  </a>
+</StyledSectionTab>
+`;
