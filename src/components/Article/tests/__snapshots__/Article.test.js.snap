@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Article /> shape will render correctly 1`] = `
+<StyledArticle>
+  <StyledArticleImg
+    src="test-img-url"
+  />
+  <StyledArticleContent>
+    <StyledTitle>
+      Test article
+    </StyledTitle>
+    <div>
+      <p>
+        Test description...
+      </p>
+    </div>
+  </StyledArticleContent>
+</StyledArticle>
+`;
