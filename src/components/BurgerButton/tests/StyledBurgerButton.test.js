@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { StyledBurgerButton } from '../StyledBurgerButton';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { mountWithTheme } from '../../../../scripts/jest/setup';
 
 
@@ -14,7 +14,7 @@ describe('<StyledBurgerButton />', () => {
 
         beforeEach(() => {
             renderedComponent = renderer.create(
-                <ThemeProvider theme={themeMock}>
+                <ThemeProvider theme={theme}>
                     <StyledBurgerButton />
                 </ThemeProvider>
             ).toJSON();
@@ -33,13 +33,13 @@ describe('<StyledBurgerButton />', () => {
         });
 
         it('will be left positioned by theme prop', () => {
-            expect(renderedComponent).toHaveStyleRule('left', `${themeMock.header.padding}px`);
+            expect(renderedComponent).toHaveStyleRule('left', `${theme.header.padding}px`);
         });
 
     });
 
     describe('shape', () => {
-        const renderedComponent = mountWithTheme(<StyledBurgerButton />, themeMock);
+        const renderedComponent = mountWithTheme(<StyledBurgerButton />, theme);
 
         it('will render a button elem', () => {
             expect(renderedComponent.find('button')).toHaveLength(1);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../Header';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { shallowWithTheme } from '../../../../scripts/jest/setup';
 import { StyledHeader } from '../StyledHeader';
 import { Background } from '../../Background';
@@ -11,7 +11,7 @@ import { Logo } from '../../Logo/Logo';
 describe('<Header />', () => {
 
     describe('shape', () => {
-        const renderedComponent = shallowWithTheme(<Header />, themeMock);
+        const renderedComponent = shallowWithTheme(<Header />, theme);
 
         it('will render correctly', () => {
             expect(renderedComponent).toMatchSnapshot();

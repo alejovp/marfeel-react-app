@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { StyledAppNav } from '../StyledAppNav';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { mountWithTheme } from '../../../../scripts/jest/setup';
 
 
@@ -14,7 +14,7 @@ describe('<StyledAppNav />', () => {
 
         beforeEach(() => {
             renderedComponent = renderer.create(
-                <ThemeProvider theme={themeMock}>
+                <ThemeProvider theme={theme}>
                     <StyledAppNav />
                 </ThemeProvider>
             ).toJSON();
@@ -32,7 +32,7 @@ describe('<StyledAppNav />', () => {
     });
 
     describe('shape', () => {
-        const renderedComponent = mountWithTheme(<StyledAppNav />, themeMock);
+        const renderedComponent = mountWithTheme(<StyledAppNav />, theme);
 
         it('will render a nav elem', () => {
             expect(renderedComponent.find('nav')).toHaveLength(1);

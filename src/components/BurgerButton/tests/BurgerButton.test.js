@@ -1,6 +1,6 @@
 import React from 'react';
 import { BurgerButton } from '../BurgerButton';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { shallowWithTheme } from '../../../../scripts/jest/setup';
 import { StyledBurgerButton } from '../StyledBurgerButton';
 import { StyledBurgerDiv } from '../StyledBurgerDiv';
@@ -9,7 +9,7 @@ import { StyledBurgerDiv } from '../StyledBurgerDiv';
 describe('<BurgerButton />', () => {
 
     describe('shape', () => {
-        const renderedComponent = shallowWithTheme(<BurgerButton />, themeMock);
+        const renderedComponent = shallowWithTheme(<BurgerButton />, theme);
 
         it('will render correctly', () => {
             expect(renderedComponent).toMatchSnapshot();

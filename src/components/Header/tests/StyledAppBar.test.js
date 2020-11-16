@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { StyledAppBar } from '../StyledAppBar';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { mountWithTheme } from '../../../../scripts/jest/setup';
 
 
@@ -14,7 +14,7 @@ describe('<StyledAppBar />', () => {
 
         beforeEach(() => {
             renderedComponent = renderer.create(
-                <ThemeProvider theme={themeMock}>
+                <ThemeProvider theme={theme}>
                     <StyledAppBar />
                 </ThemeProvider>
             ).toJSON();
@@ -29,13 +29,13 @@ describe('<StyledAppBar />', () => {
         });
 
         it('will receive a theme padding prop', () => {
-            expect(renderedComponent).toHaveStyleRule('padding', `10px ${themeMock.header.padding}px`);
+            expect(renderedComponent).toHaveStyleRule('padding', `10px ${theme.header.padding}px`);
         });
 
     });
 
     describe('shape', () => {
-        const renderedComponent = mountWithTheme(<StyledAppBar />, themeMock);
+        const renderedComponent = mountWithTheme(<StyledAppBar />, theme);
 
         it('will render a div elem', () => {
             expect(renderedComponent.find('div')).toHaveLength(1);

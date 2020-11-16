@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { StyledLogo } from '../StyledLogo';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { mountWithTheme } from '../../../../scripts/jest/setup';
 
 
@@ -14,7 +14,7 @@ describe('<StyledLogo />', () => {
 
         beforeEach(() => {
             renderedComponent = renderer.create(
-                <ThemeProvider theme={themeMock}>
+                <ThemeProvider theme={theme}>
                     <StyledLogo />
                 </ThemeProvider>
             ).toJSON();
@@ -29,7 +29,7 @@ describe('<StyledLogo />', () => {
     });
 
     describe('shape', () => {
-        const renderedComponent = mountWithTheme(<StyledLogo />, themeMock);
+        const renderedComponent = mountWithTheme(<StyledLogo />, theme);
 
         it('will render an a elem', () => {
             expect(renderedComponent.find('a')).toHaveLength(1);

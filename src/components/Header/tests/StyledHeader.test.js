@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { StyledHeader } from '../StyledHeader';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { mountWithTheme } from '../../../../scripts/jest/setup';
 
 
@@ -12,7 +12,7 @@ describe('<StyledHeader />', () => {
 
         it('will be top fixed ', () => {
             const renderedComponent = renderer.create(
-                <ThemeProvider theme={themeMock}>
+                <ThemeProvider theme={theme}>
                     <StyledHeader />
                 </ThemeProvider>
             ).toJSON();
@@ -24,7 +24,7 @@ describe('<StyledHeader />', () => {
     });
 
     describe('shape', () => {
-        const renderedComponent = mountWithTheme(<StyledHeader />, themeMock);
+        const renderedComponent = mountWithTheme(<StyledHeader />, theme);
 
         it('will render a header elem', () => {
             expect(renderedComponent.find('header')).toHaveLength(1);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Background } from '../Background';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { shallowWithTheme } from '../../../../scripts/jest/setup';
 import { StyledBackground } from '../StyledBackGround';
 
@@ -8,7 +8,7 @@ import { StyledBackground } from '../StyledBackGround';
 describe('<Background />', () => {
 
     describe('shape', () => {
-        const renderedComponent = shallowWithTheme(<Background />, themeMock);
+        const renderedComponent = shallowWithTheme(<Background />, theme);
 
         it('will render correctly', () => {
             expect(renderedComponent).toMatchSnapshot();

@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -57,10 +59,6 @@ module.exports = {
             // {
             //   test: /\.(jpg|png|gif|jpeg|woff|woff2|eot|ttf|svg)$/,
             //   loader: 'file-loader',
-            //   include: [
-            //     APP_DIR,
-            //     path.resolve(__dirname, 'node_modules/semantic-ui-css/')
-            //   ],
             //   options: {
             //     name: '[name]-[sha256:hash:base64:4].[ext]',
             //     publicPath: 'dist/images/',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo } from '../Logo';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { shallowWithTheme } from '../../../../scripts/jest/setup';
 import { StyledLogo } from '../StyledLogo';
 
@@ -8,7 +8,7 @@ import { StyledLogo } from '../StyledLogo';
 describe('<Logo />', () => {
 
     describe('shape', () => {
-        const renderedComponent = shallowWithTheme(<Logo />, themeMock);
+        const renderedComponent = shallowWithTheme(<Logo />, theme);
 
         it('will render correctly', () => {
             expect(renderedComponent).toMatchSnapshot();

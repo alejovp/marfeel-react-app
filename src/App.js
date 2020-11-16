@@ -1,14 +1,14 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './styles';
-import { useFetchTheme } from './hooks';
+import { useFetchMockData } from './hooks';
 import { AppStore } from './contexts/AppStore';
 import { Header } from './components/Header';
-import { Main } from './components/Main';
+import { Main } from './containers/Main';
 
 
 export const App = () => {
-    const { isCalling, theme } = useFetchTheme();
+    const { isCalling, data } = useFetchMockData('theme');
 
     if (isCalling) {
         return 'loading...';
@@ -16,7 +16,7 @@ export const App = () => {
 
     return (
         <AppStore>
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={data}>
                 <GlobalStyles />
                 <Header />
                 <Main />

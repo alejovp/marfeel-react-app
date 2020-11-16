@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { StyledBurgerDiv } from '../StyledBurgerDiv';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { mountWithTheme } from '../../../../scripts/jest/setup';
 
 
@@ -30,17 +30,17 @@ describe('<StyledBurgerDiv />', () => {
 
         it('will set the background by theme prop if present', () => {
             const renderedComponent = renderer.create(
-                <ThemeProvider theme={themeMock}>
+                <ThemeProvider theme={theme}>
                     <StyledBurgerDiv />
                 </ThemeProvider>
             ).toJSON();
-            expect(renderedComponent).toHaveStyleRule('background', themeMock.burgerButton.color);
+            expect(renderedComponent).toHaveStyleRule('background', theme.burgerButton.color);
         });
 
     });
 
     describe('shape', () => {
-        const renderedComponent = mountWithTheme(<StyledBurgerDiv />, themeMock);
+        const renderedComponent = mountWithTheme(<StyledBurgerDiv />, theme);
 
         it('will render a div elem', () => {
             expect(renderedComponent.find('div')).toHaveLength(1);
