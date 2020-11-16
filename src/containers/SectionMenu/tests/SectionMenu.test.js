@@ -1,10 +1,10 @@
 import React from 'react';
 import { SectionMenu } from '../SectionMenu';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { mountWithTheme } from '../../../../scripts/jest/setup';
 import { StyledSectionMenu } from '../StyledSectionMenu';
 import { sectionsMock } from '../../../../__mocks__/sections';
-import { SectionTab } from '../../SectionTab';
+import { SectionTab } from '../../../components/SectionTab';
 import { DispatchContext, StateContext } from '../../../contexts/AppStore';
 import { SET_SECTION_MENU_HEIGHT } from '../../../contexts/constants';
 
@@ -26,7 +26,7 @@ describe('<SectionMenu />', () => {
                 <StateContext.Provider value={{}}>
                     <SectionMenu sections={sectionsMock} />
                 </StateContext.Provider>
-            </DispatchContext.Provider>, themeMock);
+            </DispatchContext.Provider>, theme);
 
         it('will render correctly', () => {
             expect(renderedComponent).toMatchSnapshot();
@@ -45,13 +45,13 @@ describe('<SectionMenu />', () => {
     describe('props', () => {
         const mockDispatch = jest.fn();
 
-        it('will on component mount dispatch an action with SectionMenu height', () => {
+        it('will dispatch an action on component mount with SectionMenu height', () => {
             const renderedComponent = mountWithTheme(
                 <DispatchContext.Provider value={mockDispatch}>
                     <StateContext.Provider value={{}}>
                         <SectionMenu sections={sectionsMock} />
                     </StateContext.Provider>
-                </DispatchContext.Provider>, themeMock);
+                </DispatchContext.Provider>, theme);
             renderedComponent.update();
             expect(mockDispatch).toBeCalledWith({ type: SET_SECTION_MENU_HEIGHT, payload: mockHeight });
         });

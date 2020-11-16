@@ -1,7 +1,7 @@
 import React, { useCallback, useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { StyledSectionMenu } from './StyledSectionMenu';
-import { SectionTab } from '../SectionTab';
+import { SectionTab } from '../../components/SectionTab';
 import { useElemDimensions } from '../../hooks';
 import { DispatchContext } from '../../contexts/AppStore';
 import { setMenuSectionHeight } from '../../contexts/actions';

@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { css, ThemeProvider } from 'styled-components';
 import { StyledSectionMenu } from '../StyledSectionMenu';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { mountWithTheme } from '../../../../scripts/jest/setup';
 
 
@@ -14,7 +14,7 @@ describe('<StyledSectionMenu />', () => {
 
         beforeEach(() => {
             renderedComponent = renderer.create(
-                <ThemeProvider theme={themeMock}>
+                <ThemeProvider theme={theme}>
                     <StyledSectionMenu />
                 </ThemeProvider>
             ).toJSON();
@@ -33,17 +33,17 @@ describe('<StyledSectionMenu />', () => {
         });
 
         it('will set padding from a theme prop', () => {
-            expect(renderedComponent).toHaveStyleRule('padding', `0 ${themeMock.header.padding}px`);
+            expect(renderedComponent).toHaveStyleRule('padding', `0 ${theme.header.padding}px`);
         });
 
         it('will set the font size from a theme prop', () => {
-            expect(renderedComponent).toHaveStyleRule('font-size', `${themeMock.sectionMenu.textSize}em`);
+            expect(renderedComponent).toHaveStyleRule('font-size', `${theme.sectionMenu.textSize}em`);
         });
 
     });
 
     describe('shape', () => {
-        const renderedComponent = mountWithTheme(<StyledSectionMenu />, themeMock);
+        const renderedComponent = mountWithTheme(<StyledSectionMenu />, theme);
 
         it('will render an ul elem', () => {
             expect(renderedComponent.find('ul')).toHaveLength(1);

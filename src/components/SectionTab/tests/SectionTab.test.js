@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionTab } from '../SectionTab';
-import { themeMock } from '../../../../__mocks__/theme';
+import theme from '../../../../__mocks__/theme.json';
 import { shallowWithTheme } from '../../../../scripts/jest/setup';
 import { sectionsMock } from '../../../../__mocks__/sections';
 import { StyledSectionTab } from '../StyledSectionTab';
@@ -11,7 +11,7 @@ describe('<SectionTab />', () => {
     describe('shape', () => {
         const renderedComponent = shallowWithTheme(
             <SectionTab section={sectionsMock[1]}
-                        onClick={jest.fn()} />, themeMock);
+                        onClick={jest.fn()} />, theme);
 
         it('will render correctly', () => {
             expect(renderedComponent).toMatchSnapshot();
@@ -32,7 +32,7 @@ describe('<SectionTab />', () => {
         it('wont render anything if section prop have no id or text', () => {
             const renderedComponent = shallowWithTheme(
                 <SectionTab section={{ text: '' }}
-                            onClick={jest.fn()} />, themeMock);
+                            onClick={jest.fn()} />, theme);
             expect(renderedComponent.type()).toBe(null);
         });
 
@@ -41,7 +41,7 @@ describe('<SectionTab />', () => {
             const renderedComponent = shallowWithTheme(
                 <SectionTab section={sectionsMock[1]}
                             onClick={onClickMock}
-                            currentSection={sectionsMock[2].id} />, themeMock);
+                            currentSection={sectionsMock[2].id} />, theme);
             renderedComponent.simulate('click');
             expect(onClickMock).toBeCalledWith(sectionsMock[1].id);
         });
