@@ -4,7 +4,7 @@ import { useScrollPosition } from '../../hooks';
 import { Background } from '../Background';
 import { BurgerButton } from '../BurgerButton/BurgerButton';
 import { Logo } from '../Logo/Logo';
-import { SectionMenu } from '../SectionMenu';
+import { SectionMenu } from '../../containers/SectionMenu';
 import { StyledAppBar } from './StyledAppBar';
 import { StyledAppNav } from './StyledAppNav';
 import { StyledHeader } from './StyledHeader';

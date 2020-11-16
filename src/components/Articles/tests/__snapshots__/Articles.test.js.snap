@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Articles /> shape will render correctly 1`] = `
+<StyledArticles>
+  <Article
+    description="Excepteur laborum quis anim dolor dolore proident culpa mollit ea aliquip elit culpa. Non voluptate qui Lorem laborum ad ex ipsum excepteur incididunt esse. Aliquip sunt in est voluptate cillum pariatur. Magna tempor labore esse quis dolor esse voluptate. Labore anim aliquip sint ullamco consectetur ad exercitation eu proident."
+    img="https://burst.shopifycdn.com/photos/business-flatlay-in-india.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Aute sunt nulla nostrud exercitation amet voluptate Lorem cillum incididunt proident."
+  />
+  <Divider />
+  <Article
+    description="Pariatur mollit quis occaecat in qui aute aute. Qui aute adipisicing et ea sit veniam ut officia eu pariatur tempor deserunt. Commodo consectetur ipsum Lorem magna quis labore ullamco est. Enim est enim fugiat aliquip veniam non. Sunt sunt proident dolore qui ipsum veniam incididunt exercitation adipisicing ut ex."
+    img="https://burst.shopifycdn.com/photos/woman-edits-images-on-her-laptop.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Sint consectetur et aute qui qui reprehenderit incididunt incididunt sunt."
+  />
+  <Divider />
+  <Article
+    description="Amet aliqua eiusmod Lorem minim consectetur non esse sint non commodo veniam cillum. Anim labore labore excepteur dolor cupidatat incididunt dolor quis magna nulla nostrud est. Reprehenderit eiusmod dolor officia deserunt cupidatat non ipsum. Anim non irure amet exercitation aute duis laboris enim dolor incididunt irure aute. Qui aliquip incididunt reprehenderit occaecat aliqua adipisicing sint ex nostrud ad mollit."
+    img="https://burst.shopifycdn.com/photos/a-blue-point-himalayan-sits-at-a-desk.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Voluptate mollit elit ipsum eiusmod voluptate dolor pariatur tempor ex."
+  />
+  <Divider />
+  <Article
+    description="Commodo ad ut proident nisi nisi ut. Magna nostrud officia ipsum magna quis nisi sunt mollit do veniam ex. Ullamco velit consectetur nisi non mollit eiusmod ullamco. Eu duis in ipsum aliquip fugiat elit consectetur ad."
+    img="https://burst.shopifycdn.com/photos/design-plans-color-swatches.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Do laborum dolore qui adipisicing occaecat aute culpa amet proident."
+  />
+  <Divider />
+  <Article
+    description="Excepteur laborum quis anim dolor dolore proident culpa mollit ea aliquip elit culpa. Non voluptate qui Lorem laborum ad ex ipsum excepteur incididunt esse. Aliquip sunt in est voluptate cillum pariatur. Magna tempor labore esse quis dolor esse voluptate. Labore anim aliquip sint ullamco consectetur ad exercitation eu proident."
+    img="https://burst.shopifycdn.com/photos/desk-setup-with-motivational-poster.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Aute sunt nulla nostrud exercitation amet voluptate Lorem cillum incididunt proident."
+  />
+  <Divider />
+  <Article
+    description="Excepteur laborum quis anim dolor dolore proident culpa mollit ea aliquip elit culpa. Non voluptate qui Lorem laborum ad ex ipsum excepteur incididunt esse. Aliquip sunt in est voluptate cillum pariatur. Magna tempor labore esse quis dolor esse voluptate. Labore anim aliquip sint ullamco consectetur ad exercitation eu proident."
+    img=""
+    title="Aute sunt nulla nostrud exercitation amet voluptate Lorem cillum incididunt proident."
+  />
+  <Divider />
+  <Article
+    description="Pariatur mollit quis occaecat in qui aute aute. Qui aute adipisicing et ea sit veniam ut officia eu pariatur tempor deserunt. Commodo consectetur ipsum Lorem magna quis labore ullamco est. Enim est enim fugiat aliquip veniam non. Sunt sunt proident dolore qui ipsum veniam incididunt exercitation adipisicing ut ex."
+    img="https://burst.shopifycdn.com/photos/woman-edits-images-on-her-laptop.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Sint consectetur et aute qui qui reprehenderit incididunt incididunt sunt."
+  />
+  <Divider />
+  <Article
+    description="Amet aliqua eiusmod Lorem minim consectetur non esse sint non commodo veniam cillum. Anim labore labore excepteur dolor cupidatat incididunt dolor quis magna nulla nostrud est. Reprehenderit eiusmod dolor officia deserunt cupidatat non ipsum. Anim non irure amet exercitation aute duis laboris enim dolor incididunt irure aute. Qui aliquip incididunt reprehenderit occaecat aliqua adipisicing sint ex nostrud ad mollit."
+    img="https://burst.shopifycdn.com/photos/a-blue-point-himalayan-sits-at-a-desk.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Voluptate mollit elit ipsum eiusmod voluptate dolor pariatur tempor ex."
+  />
+  <Divider />
+  <Article
+    description="Commodo ad ut proident nisi nisi ut. Magna nostrud officia ipsum magna quis nisi sunt mollit do veniam ex. Ullamco velit consectetur nisi non mollit eiusmod ullamco. Eu duis in ipsum aliquip fugiat elit consectetur ad."
+    img="https://burst.shopifycdn.com/photos/design-plans-color-swatches.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Do laborum dolore qui adipisicing occaecat aute culpa amet proident."
+  />
+  <Divider />
+  <Article
+    description="Excepteur laborum quis anim dolor dolore proident culpa mollit ea aliquip elit culpa. Non voluptate qui Lorem laborum ad ex ipsum excepteur incididunt esse. Aliquip sunt in est voluptate cillum pariatur. Magna tempor labore esse quis dolor esse voluptate. Labore anim aliquip sint ullamco consectetur ad exercitation eu proident."
+    img="https://burst.shopifycdn.com/photos/desk-setup-with-motivational-poster.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Aute sunt nulla nostrud exercitation amet voluptate Lorem cillum incididunt proident."
+  />
+  <Divider />
+  <Article
+    description="Excepteur laborum quis anim dolor dolore proident culpa mollit ea aliquip elit culpa. Non voluptate qui Lorem laborum ad ex ipsum excepteur incididunt esse. Aliquip sunt in est voluptate cillum pariatur. Magna tempor labore esse quis dolor esse voluptate. Labore anim aliquip sint ullamco consectetur ad exercitation eu proident."
+    img="https://burst.shopifycdn.com/photos/business-flatlay-in-india.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Aute sunt nulla nostrud exercitation amet voluptate Lorem cillum incididunt proident."
+  />
+  <Divider />
+  <Article
+    description="Pariatur mollit quis occaecat in qui aute aute. Qui aute adipisicing et ea sit veniam ut officia eu pariatur tempor deserunt. Commodo consectetur ipsum Lorem magna quis labore ullamco est. Enim est enim fugiat aliquip veniam non. Sunt sunt proident dolore qui ipsum veniam incididunt exercitation adipisicing ut ex."
+    img="https://burst.shopifycdn.com/photos/woman-edits-images-on-her-laptop.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Sint consectetur et aute qui qui reprehenderit incididunt incididunt sunt."
+  />
+  <Divider />
+  <Article
+    description="Amet aliqua eiusmod Lorem minim consectetur non esse sint non commodo veniam cillum. Anim labore labore excepteur dolor cupidatat incididunt dolor quis magna nulla nostrud est. Reprehenderit eiusmod dolor officia deserunt cupidatat non ipsum. Anim non irure amet exercitation aute duis laboris enim dolor incididunt irure aute. Qui aliquip incididunt reprehenderit occaecat aliqua adipisicing sint ex nostrud ad mollit."
+    img="https://burst.shopifycdn.com/photos/a-blue-point-himalayan-sits-at-a-desk.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Voluptate mollit elit ipsum eiusmod voluptate dolor pariatur tempor ex."
+  />
+  <Divider />
+  <Article
+    description="Commodo ad ut proident nisi nisi ut. Magna nostrud officia ipsum magna quis nisi sunt mollit do veniam ex. Ullamco velit consectetur nisi non mollit eiusmod ullamco. Eu duis in ipsum aliquip fugiat elit consectetur ad."
+    img="https://burst.shopifycdn.com/photos/design-plans-color-swatches.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Do laborum dolore qui adipisicing occaecat aute culpa amet proident."
+  />
+  <Divider />
+  <Article
+    description="Excepteur laborum quis anim dolor dolore proident culpa mollit ea aliquip elit culpa. Non voluptate qui Lorem laborum ad ex ipsum excepteur incididunt esse. Aliquip sunt in est voluptate cillum pariatur. Magna tempor labore esse quis dolor esse voluptate. Labore anim aliquip sint ullamco consectetur ad exercitation eu proident."
+    img="https://burst.shopifycdn.com/photos/desk-setup-with-motivational-poster.jpg?width=373&format=pjpg&exif=0&iptc=0"
+    title="Aute sunt nulla nostrud exercitation amet voluptate Lorem cillum incididunt proident."
+  />
+  <Divider />
+</StyledArticles>
+`;
