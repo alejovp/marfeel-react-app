@@ -4,6 +4,7 @@ export const StyledBackground = styled.div`
     height: inherit;
     width: 100%;
     background-color: ${({theme}) => theme.background.color};
+    background: ${({theme}) => theme.background.gradient};
     z-index: 1;
 `;
 
