@@ -15,5 +15,9 @@
     },
     "burgerButton": {
         "color": "red"
+    },
+    "logo": {
+        "image": "https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg",
+        "size": 36
     }
 }

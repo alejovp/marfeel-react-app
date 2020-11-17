@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 import { StyledLogo } from './StyledLogo';
 
-export const Logo = () => (
-    <StyledLogo>
-        <img src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg" />
-    </StyledLogo>
-);
+export const Logo = () => {
+    const { logo } = useContext(ThemeContext);
+
+    return (
+        <StyledLogo>
+            <img src={logo.image} />
+        </StyledLogo>
+    );
+};

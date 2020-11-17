@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Logo /> shape will render correctly 1`] = `
-<styled.a>
-  <img
-    src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
-  />
-</styled.a>
+<Logo>
+  <styled.a>
+    <a
+      className="kgaXSa"
+    >
+      <img
+        src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
+      />
+    </a>
+  </styled.a>
+</Logo>
 `;
