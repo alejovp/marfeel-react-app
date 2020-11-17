@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { StateContext } from '../../contexts/AppStore';
+import { HomePage } from '../HomePage';
 import { StyledMain } from './StyledMain';
 
 
@@ -8,7 +9,7 @@ export const Main = () => {
 
     return (
         <StyledMain state={state}>
-            <h1 style={{ height: '1500px' }}>Hello there!!</h1>
+            <HomePage />
         </StyledMain>
     );
 };
