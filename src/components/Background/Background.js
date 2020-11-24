@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledBackground } from './StyledBackGround';
+import { StyledBackground } from './StyledBackground';
 
 
 export const Background = ({ children, ...rest }) => {
