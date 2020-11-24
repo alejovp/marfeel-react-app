@@ -5,7 +5,7 @@ export const StyledLogo = styled.a`
     cursor: pointer;
     position: relative;
     img {
-        height: ${({ theme }) => theme.logo.size}px;
+        height: ${({ theme, size }) => size ? size : theme.logo.size}px;
         filter: ${({ grayScaled }) => grayScaled ? 'grayscale(1)' : null};
     }
 `;

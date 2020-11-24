@@ -4,16 +4,18 @@ import { ThemeContext } from 'styled-components';
 import { StyledLogo } from './StyledLogo';
 
 
-export const Logo = ({ grayScaled }) => {
+export const Logo = ({ grayScaled, size }) => {
     const { logo } = useContext(ThemeContext);
 
     return (
-        <StyledLogo grayScaled={grayScaled}>
+        <StyledLogo size={size}
+                    grayScaled={grayScaled}>
             <img src={logo.image} />
         </StyledLogo>
     );
 };
 
 Logo.propTypes = {
-    grayScaled: PropTypes.bool
+    grayScaled: PropTypes.bool,
+    size: PropTypes.number
 };

@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useState } from 'react';
 import { sectionsMock } from '../../../__mocks__/sections';
-import { useScrollPosition } from '../../hooks';
+import { useElemDimensions, useScrollPosition } from '../../hooks';
 import { Background } from '../Background';
 import { BurgerButton } from '../BurgerButton/BurgerButton';
 import { Logo } from '../Logo/Logo';
@@ -16,6 +16,8 @@ export const Header = () => {
     const dispatch = useContext(DispatchContext);
     const [hideSectionMenu, setHideSectionMenu] = useState(false);
     const [hideAppNav, setHideAppNav] = useState(false);
+    const [ref, dimensions] = useElemDimensions();
+
     const positionHandler = (pos) => {
         if (pos <= 400) {
             setHideAppNav(false);
@@ -38,7 +40,9 @@ export const Header = () => {
         <StyledHeader>
             <BurgerButton onClick={onClickHandler} />
             <Background>
-                <StyledAppNav hide={hideAppNav}>
+                <StyledAppNav ref={ref}
+                              hide={hideAppNav}
+                              dimensions={dimensions}>
                     <Background>
                         <StyledAppBar>
                             <Logo />

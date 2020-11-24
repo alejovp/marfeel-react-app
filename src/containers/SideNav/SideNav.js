@@ -37,7 +37,8 @@ export const SideNav = () => {
             <div>
                 <Background>
                     <StyledSideBar>
-                        <Logo grayScaled />
+                        <Logo size={28}
+                              grayScaled />
                     </StyledSideBar>
                 </Background>
             </div>
