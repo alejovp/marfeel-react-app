@@ -1,9 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BurgerButton /> shape will render correctly 1`] = `
-<StyledBurgerButton>
-  <StyledBurgerDiv />
-  <StyledBurgerDiv />
-  <StyledBurgerDiv />
-</StyledBurgerButton>
+<BurgerButton>
+  <StyledFloatingCircle
+    left={15}
+    top={8}
+  >
+    <div
+      className="GCPYb"
+    >
+      <StyledBurgerButton>
+        <button
+          className="hXkIwj"
+        >
+          <StyledBurgerDiv>
+            <div
+              className="desPIF"
+            />
+          </StyledBurgerDiv>
+          <StyledBurgerDiv>
+            <div
+              className="desPIF"
+            />
+          </StyledBurgerDiv>
+          <StyledBurgerDiv>
+            <div
+              className="desPIF"
+            />
+          </StyledBurgerDiv>
+        </button>
+      </StyledBurgerButton>
+    </div>
+  </StyledFloatingCircle>
+</BurgerButton>
 `;
