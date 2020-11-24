@@ -2,11 +2,15 @@
 
 exports[`<Header /> shape will render correctly 1`] = `
 <StyledHeader>
+  <BurgerButton
+    onClick={[Function]}
+  />
   <Background>
-    <StyledAppNav>
+    <StyledAppNav
+      hide={false}
+    >
       <Background>
         <StyledAppBar>
-          <BurgerButton />
           <Logo />
         </StyledAppBar>
       </Background>

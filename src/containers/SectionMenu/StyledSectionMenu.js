@@ -12,10 +12,10 @@ export const StyledSectionMenu = styled.ul`
     font-size: ${({ theme }) => theme.sectionMenu && theme.sectionMenu.textSize || 1}em;
     transition: margin-top 0.4s;
     margin-top: ${({ hideSectionMenu, dimensions }) => hideSectionMenu ? -dimensions.height : 0}px;
-    scrollbar-width: none;  /* Firefox */
+    scrollbar-width: none;
 
     ::-webkit-scrollbar {
-        display: none; /* Chrome, Safari and Opera */
+        display: none;
     }
 `;
 

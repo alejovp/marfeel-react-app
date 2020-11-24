@@ -1,18 +1,18 @@
-import React, { useCallback, useContext, useEffect, useState } from 'react';
+import React, { useCallback, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { StyledSectionMenu } from './StyledSectionMenu';
 import { SectionTab } from '../../components/SectionTab';
 import { useElemDimensions } from '../../hooks';
-import { DispatchContext } from '../../contexts/AppStore';
-import { setMenuSectionHeight } from '../../contexts/actions';
+import { DispatchContext, StateContext } from '../../contexts/AppStore';
+import { setCurrentSection, setMenuSectionHeight } from '../../contexts/actions';
 
 
 export const SectionMenu = ({ sections = [], hideSectionMenu }) => {
     const dispatch = useContext(DispatchContext);
-    const [currentSection, setCurrentSection] = useState('sec-1');
+    const { currentSection } = useContext(StateContext);
     const [ref, dimensions] = useElemDimensions();
     const onClickHandler = useCallback(
-        (section) => setCurrentSection(section), []
+        (section) => dispatch(setCurrentSection(section)), [dispatch]
     );
 
     useEffect(() => {

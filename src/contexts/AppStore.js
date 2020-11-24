@@ -2,10 +2,13 @@ import React, { createContext, useReducer } from 'react';
 import PropTypes from 'prop-types';
 import { appReducer } from './reducer';
 import { SECTION_MENU_HEIGHT } from '../internals/constants';
+import { sectionsMock } from '../../__mocks__/sections';
 
 
 const initialState = {
-    sectionMenuHeight: SECTION_MENU_HEIGHT
+    sectionMenuHeight: SECTION_MENU_HEIGHT,
+    openSideNav: false,
+    currentSection: sectionsMock[0].id // this should be controlled by router location path
 };
 
 const StateContext = createContext();

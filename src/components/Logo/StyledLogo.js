@@ -6,5 +6,8 @@ export const StyledLogo = styled.a`
     position: relative;
     img {
         height: ${({ theme }) => theme.logo.size}px;
+        filter: ${({ grayScaled }) => grayScaled ? 'grayscale(1)' : null};
     }
 `;
+
+StyledLogo.displayName = 'StyledLogo';

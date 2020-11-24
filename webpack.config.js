@@ -43,28 +43,11 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test: /\.s?css$/,
-            //     use: [
-            //         'style-loader',
-            //         'css-loader',
-            //         'sass-loader'
-            //     ],
-            // },
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: ['babel-loader']
             }
-            // {
-            //   test: /\.(jpg|png|gif|jpeg|woff|woff2|eot|ttf|svg)$/,
-            //   loader: 'file-loader',
-            //   options: {
-            //     name: '[name]-[sha256:hash:base64:4].[ext]',
-            //     publicPath: 'dist/images/',
-            //     outputPath: './images/'
-            //   }
-            // }
         ]
     },
     plugins: [

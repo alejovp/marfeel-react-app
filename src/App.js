@@ -5,6 +5,7 @@ import { useFetchMockData } from './hooks';
 import { AppStore } from './contexts/AppStore';
 import { Header } from './components/Header';
 import { Main } from './containers/Main';
+import { SideNav } from './containers/SideNav';
 
 
 export const App = () => {
@@ -20,6 +21,7 @@ export const App = () => {
                 <GlobalStyles />
                 <Header />
                 <Main />
+                <SideNav />
             </ThemeProvider>
         </AppStore>
     );

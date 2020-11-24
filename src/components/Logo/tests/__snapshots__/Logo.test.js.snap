@@ -2,14 +2,14 @@
 
 exports[`<Logo /> shape will render correctly 1`] = `
 <Logo>
-  <styled.a>
+  <StyledLogo>
     <a
-      className="kgaXSa"
+      className="cdiPAu"
     >
       <img
         src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
       />
     </a>
-  </styled.a>
+  </StyledLogo>
 </Logo>
 `;

@@ -8,6 +8,6 @@ export const useScrollPosition  = (callback) => {
         };
         window.addEventListener('scroll', scrollHandler);
         return () => window.removeEventListener('scroll', scrollHandler);
-    });
+    }, []);
 
 };
